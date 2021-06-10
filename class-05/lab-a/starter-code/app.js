@@ -77,11 +77,11 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-  let summation = 0;
-  for (let i = 0; i<sumArr.length; i++){
-    summation+=sumArr[i];
+  let arrSum = 0;
+  for (let i = 0; i<sumArr.length;i++){
+    arrSum = sum(arrSum,sumArr[i])[0];
   }
-  return [summation, `${sumArr} was passed in as an array of numbers, and ${summation} is their sum.`]
+  return [arrSum, `${sumArr} was passed in as an array of numbers, and ${arrSum} is their sum.`]
 }
 
 // Here is the test for sumArray(); uncomment it to run it
